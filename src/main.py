@@ -24,6 +24,8 @@ def runner():
             print(df.head())  # Show the first few rows of the dataframe
         else:
             print("No articles found.")
+        df.to_csv("news.csv", encoding='utf-8', index=False)
+
     else:
         print(f"Failed to fetch data: {response.status_code}")
 

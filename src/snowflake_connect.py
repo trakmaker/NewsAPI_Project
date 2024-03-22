@@ -17,6 +17,6 @@ def connect_snowflake():
     try:
         conn.cursor().execute("USE WAREHOUSE COMPUTE_WH")
         conn.cursor().execute("USE DATABASE TRAKMAKER")
-        print(conn.cursor().execute("SELECT CURRENT_DATABASE()"))
+        print(conn.cursor().execute("CREATE TABLE TEST_PYTHON(TEST VARCHAR(1000))"))
     except Exception as e:
         print(f"Connection failed: {e}")
