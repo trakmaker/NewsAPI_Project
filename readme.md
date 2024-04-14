@@ -1,1 +1,1 @@
-This is a portfolio project to improve my skills
+This is a portfolio project
